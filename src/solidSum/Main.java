@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Sum sum = new Sum();
-        Print print = new Print();
-        Input input = new Input();
+        SumInterface sum = new Sum();
+        PrintInterface print = new Print();
+        InputInterface input = new Input();
 
         print.print("Введите первое число: ");
         int a = input.input(scanner);
