@@ -4,7 +4,7 @@ import solidSum.IO.InputInterface;
 import solidSum.IO.PrintInterface;
 
 public class Operation {
-    int a, b, sum;
+    private int a, b, sum;
 
     public void printRequestA(PrintInterface print){
         print.print("Введите первое число: ");
