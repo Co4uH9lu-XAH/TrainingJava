@@ -20,20 +20,9 @@ public class NetWork {
     // Создавать экземпляр будет вложенный класс NetWorkBuilder
     static class NetWorkBuilder implements NetWorkBuilderInterface{
 
-    // Объявляем теже поля, что и в требуемом классе
-        private String address;
-        private String port;
-
-    // Геттеры для ображения к полям
-        public String getAddress() {
-            return address;
-        }
-
-        public String getPort() {
-            return port;
-        }
         NetWork netWork = new NetWork();
-    // Далее два метода, которые установят поля классу NetWorkBuilder
+    // Далее два метода, которые установят те поля классу NetWork, которые передадим в качестве аргумента в эти методы
+    // и вернут данный класс
         @Override
         public NetWorkBuilder setAddress(String address) {
             netWork.address = address;
@@ -53,7 +42,8 @@ public class NetWork {
 }
 class Main{
     public static void main(String[] args) {
-        NetWork netWork = new NetWork.NetWorkBuilder().setPort("8080").build();
+        // Теперь можно создавать экземпляр класса, заполнять его поля через NetWorkBuilder в любой последовательности
+        NetWork netWork = new NetWork.NetWorkBuilder().setPort("8080").setAddress("addres").build();
         System.out.println(netWork);
     }
 }

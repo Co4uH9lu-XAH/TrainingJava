@@ -24,6 +24,6 @@ public class Main {
         operation.digitEnterB(input);
         operation.calculation(sum);
         operation.printResult(print);
-
+        
     }
 }
