@@ -21,8 +21,8 @@ import java.util.Arrays;
 
 public class ReturnTwoIntegers {
     public static void main(String[] args) throws Exception {
-        int [] array = {0,1,2,3};
-        int target = 0;
+        int [] array = {5,1,2,3};
+        int target = 7;
         System.out.println(Arrays.toString(twoSum(array, target)));
 
     }
