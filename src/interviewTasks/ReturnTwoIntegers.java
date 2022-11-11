@@ -21,19 +21,19 @@ import java.util.Arrays;
 
 public class ReturnTwoIntegers {
     public static void main(String[] args) throws Exception {
-        int [] array = {5,1,2,3};
-        int target = 7;
+        int [] array = {2,4,11,3};
+        int target = 6;
         System.out.println(Arrays.toString(twoSum(array, target)));
 
     }
     public static int[] twoSum(int[] nums, int target) throws Exception {
 
         int [] result = new int[2];
-        for (int i=0; i<nums.length; i++){
-            for(int j=0; j< nums.length; j++){
+        for (int i=0; i<nums.length-1; i++){
+            for(int j=i+1; j< nums.length; j++){
                 if (nums[i]+nums[j]==target){
-                  result[0]= j;
-                  result[1]=i;
+                  result[0]= i;
+                  result[1]=j;
                     break;
                 }
             }

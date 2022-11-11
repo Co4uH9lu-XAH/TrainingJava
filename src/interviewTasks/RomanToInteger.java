@@ -37,7 +37,7 @@ public class RomanToInteger {
 }
 class Main{
     public static void main(String[] args) {
-        System.out.println(RomanToInteger.convertedInt("CMVII"));
+        System.out.println(RomanToInteger.convertedInt("CDLVI"));
     }
 }
 
